@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lyft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Splash -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="splashBox" id="splash" style="display:;">
+            <img class="logoLyft" src="assets/images/logo-white.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Primera Sección -->
+  <section class="pageOne">
+    <div class="container-fluid">
+      <div class="row out">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img class="logoWhite" src="assets/images/logo-white.png" alt="logo">
+          <img class="logoPink" src="assets/images/lyft-lyfe.svg" alt="logo">
+          <button type="button" class="btn btn-default boton">Log In</button>
+          <button id="sign" type="button" class="btn btn-default boton">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Segunda Sección -->
+  <section class="pageTwo">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="page-header">
+            <a href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+            <h1>Sign Up</h1>
+            <p>Join now for free ride credit</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="dropInput">
+            <div class="wrap-select">
+              <div id="dd" class="wrapper-dropdown-3">
+                <span>Pais</span>
+                <ul class="dropdown">
+                  <li><a href="#">Pais</a></li>
+                  <li><a href="#">Chile</a></li>
+                  <li><a href="#">Argentina</a></li>
+                  <li><a href="#">Perú</a></li>
+                </ul>
+              </div>
+            </div>
+            <input id="phone" type="text" class="form-control" name="text" ;>
+          </div>
+          <p class="txtDrop">We'll send a text to verify your phone</p>
+          <button data-toggle="modal" href="#myModal" class="btnNext disabled" type="button" name="button" disabled="true">NEXT</button>
+          <div class="nextPage">
+            <a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Verify Code-->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Codigo de Verificación</h4>
+        </div>
+        <div class="modal-body">
+          <p>Tu codigo es: LAB-551</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

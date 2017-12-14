@@ -1,0 +1,66 @@
+/*
+ *Funcion general
+ */
+$(document).ready(function() {
+  /*
+   *Splash
+   */
+  $("#splash").fadeIn(5000).slideUp(3000);
+
+  /*
+   *Dropdown
+   */
+  function DropDown(el) {
+    this.dd = el;
+    this.placeholder = this.dd.children('span');
+    this.opts = this.dd.find('.dropdown a');
+    this.val = '';
+    this.index = -1;
+    this.initEvents();
+  }
+  DropDown.prototype = {
+    initEvents: function() {
+      var obj = this;
+
+      obj.dd.on('click', function(event) {
+        $(this).toggleClass('active');
+        return false;
+      });
+
+      obj.opts.on('click', function() {
+        var opt = $(this);
+        obj.val = opt.text();
+        obj.index = opt.index();
+        obj.placeholder.text(obj.val);
+      });
+    },
+    getValue: function() {
+      return this.val;
+    },
+    getIndex: function() {
+      return this.index;
+    }
+  }
+
+  $(function() {
+    var dd = new DropDown($('#dd'));
+  });
+
+  /*
+   *Disabled button
+   */
+  $("#phone").keyup(function() {
+    if ($(this).val().length == 10) {
+      $(".btnNext").removeAttr("disabled");
+      $(".btnNext").removeClass("disabled");
+    }
+  });
+
+});
+
+/*
+ *Button Sign up
+ */
+$("#sign").click(function() {
+  $(".pageOne").fadeOut(2000);
+});

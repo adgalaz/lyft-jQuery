@@ -1,0 +1,207 @@
+/*
+Reseteando estilos del navegador
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Splash
+*/
+.logoLyft{
+  padding-top: 250px;
+  width:200px;
+  height:auto;
+}
+
+.splashBox{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#5B0061, #E30A8A);
+  text-align: center;
+}
+
+/*
+PRIMERA SECCION
+*/
+.pageOne{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/lyft1.jpg);
+  background-size: cover;
+  background-position: right 90%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.logoWhite{
+  width:100px;
+  height:auto;
+  padding-top: 10px;
+}
+
+.logoPink{
+  width:300px;
+  height:auto;
+  padding-top: 100px;
+}
+
+.boton{
+  margin-top: 100px;
+  font-weight: 900;
+}
+
+/*
+SEGUNDA SECCION
+*/
+
+.pageTwo{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.dropInput{
+  display: flex;
+  background-color: #fff;
+}
+
+.form-control{
+  height: 42px !important;
+}
+
+.txtDrop{
+  margin-top: 30px;
+}
+
+/*
+Dropdown
+*/
+.wrapper-dropdown-3 {
+    /* Size and position */
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+    padding: 10px;
+
+    /* Styles */
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+    cursor: pointer;
+    outline: none;
+}
+
+.wrapper-dropdown-3:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #000 transparent;
+}
+
+.wrapper-dropdown-3 .dropdown {
+  /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+padding:0;
+margin:0;
+    /* Styles */
+    background: white;
+    border: 1px solid rgba(0,0,0,0.17);
+    font-weight: normal;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    list-style: none;
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper-dropdown-3 .dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #e6e8ea;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-3 .dropdown li i {
+    float: right;
+    color: inherit;
+}
+
+.wrapper-dropdown-3 .dropdown li:first-of-type a {
+    border-radius: 7px 7px 0 0;
+}
+
+.wrapper-dropdown-3 .dropdown li:last-of-type a {
+    border: none;
+    border-radius: 0 0 7px 7px;
+}
+
+/* Hover state */
+.wrapper-dropdown-3 .dropdown li:hover a {
+    background: #f3f8f8;
+}
+
+/* Active state */
+.wrapper-dropdown-3.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* No CSS3 support */
+.no-opacity       .wrapper-dropdown-3 .dropdown,
+.no-pointerevents .wrapper-dropdown-3 .dropdown {
+    display: none;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.no-opacity       .wrapper-dropdown-3.active .dropdown,
+.no-pointerevents .wrapper-dropdown-3.active .dropdown {
+    display: block;
+}
+
+/*
+Button enabled-disabled
+*/
+
+.btnNext{
+  width: -webkit-fill-available;
+  height: 35px;
+  color: #fff;
+  background-color: #E50A8A;
+  border-color: #E50A8A;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.disabled{
+  background-color: #DFDFDF;
+  border-color: #DFDFDF;
+  color: #627E8C;
+}
+
+.nextPage{
+ margin-top: 30px;
+}
